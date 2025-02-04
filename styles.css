@@ -247,7 +247,7 @@ nav ul li a:hover {
 /* CONTROL */
 
 .control-section {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
