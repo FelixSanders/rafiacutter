@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8904a90371.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>RafiaCutter</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="header-text" class="title-font">RafiaCutter</h1>
+
+        <!--
+        <nav>
+            <ul id="menu">
+                <li><a href="about">DASHBOARD</a></li>
+                <li><a href="size">SIZE GUIDE</a></li>
+                <li><a href="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        -->
+
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </header>
+    <div class="banner-section">
+        <div class="banner-card">
+            <p>Welcome to</p>
+            <h2>RafiaCutter</h2>
+            <p id="time-display" class="time-display">--/--/----, --:--:--</p>
+        </div>
+    </div>
+
+
+    
+    <div class="connect-section">
+        <div class="connect-card">
+            <p>Connect the device:</p>
+            <div class="connect-button-container">
+                <button id="usb" class="connect-button enabled"><i class="fa-brands fa-usb"></i> Connect via
+                    USB</button>
+                <button id="bluetooth" class="connect-button enabled"><i class="fa-brands fa-bluetooth-b"></i> Connect
+                    via Bluetooth</button>
+            </div>
+            <p>Status: <span id="connection-status" class="status-disconnected">DISCONNECTED</span></p>
+        </div>
+    </div>
+
+    <div class="control-section">
+        <h2><i class="fa-solid fa-desktop"></i> Control Panel</h2>
+        <div class="control-card">
+            <button id="start-stop" class="control-button start">START</button>
+    
+            <p class="input-title">Enter Cutting Length (cm):</p>
+            <div class="control-input-group">
+                <input type="number" id="length-input" min="1" placeholder="Enter length">
+                <button id="send-length" class="control-button">Update</button>
+            </div>
+        </div>
+        <div class="control-card">
+            <h3>Monitor</h3>
+            <div class="control-display">
+                <p><i class="fa-solid fa-ruler"></i> Current Length</p>
+                <p id="length-display" class="display-value">0</p>
+            </div>
+
+            <div class="control-display">
+                <p><i class="fa-solid fa-circle-check"></i> Counter</p>
+                <p id="counter-display" class="display-value">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
