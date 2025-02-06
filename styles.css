@@ -114,7 +114,7 @@ nav ul li a:hover {
     margin-right: 1em;
 }
 
-@media (max-width: 550px) {
+/*@media (max-width: 550px) {
     nav ul {
         display: flex;
         flex-direction: column;
@@ -143,7 +143,7 @@ nav ul li a:hover {
     #menu-toggle {
         display: block;
     }
-}
+}*/
 
 /* BANNER */
 
