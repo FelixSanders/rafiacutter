@@ -52,8 +52,16 @@ header {
 
 header h1 {
     margin: 10px;
-    margin-left: 1em;
     font-size: 2rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+header img {
+    margin: 0 15px;
+    height: 2.5rem;
+    width: auto;
+    
     user-select: none;
     cursor: pointer;
 }
